@@ -16,11 +16,13 @@
         android:text="다른 화면으로 이동"/>
 
     <EditText
+        android:id="@+id/messageEdt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="넘겨줄 문구를 입력"/>
 
     <Button
+        android:id="@+id/moveToSecondBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="다른 화면으로 문구 넘겨주기"/>
