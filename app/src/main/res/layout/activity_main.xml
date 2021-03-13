@@ -90,6 +90,18 @@
         android:layout_height="wrap_content"
         android:text="문자 전송 화면 이동"/>
 
+    <Button
+        android:id="@+id/naverBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="네이버 웹으로 이동"/>
+
+    <Button
+        android:id="@+id/kakaoStoreBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="카톡 플레이스토어로 이동"/>
+
 
 
 

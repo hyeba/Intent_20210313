@@ -91,6 +91,21 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+        naverBtn.setOnClickListener {
+
+            val myUri = Uri.parse("http://www.naver.com")
+            val myIntent = Intent(Intent.ACTION_VIEW, myUri)
+            startActivity(myIntent)
+
+        }
+
+        kakaoStoreBtn.setOnClickListener {
+
+            val myUri = Uri.parse("market://details?id=com.kakao.talk")      // 스토어링크 상세 주소
+            val myIntent = Intent(Intent.ACTION_VIEW, myUri)
+            startActivity(myIntent)
+        }
+
 
 
     }
