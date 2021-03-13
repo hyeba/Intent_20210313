@@ -77,8 +77,16 @@ class MainActivity : AppCompatActivity() {
             val myIntent = Intent(Intent.ACTION_CALL, myUri)
 
             startActivity(myIntent)
+        }
 
+        smsBtn.setOnClickListener {
+            val phoneNum = phoneNumEdt.text.toString()
 
+            val myUri = Uri.parse("smsto:${phoneNum}")
+            val myIntent = Intent(Intent.ACTION_SENDTO, myUri)
+//            문자 화면에 미리 적어줄 내용 첨부
+            myIntent.putExtra("sms_body", "이 앱을 공유해주시면...")
+            startActivity(myIntent)
 
 
         }
