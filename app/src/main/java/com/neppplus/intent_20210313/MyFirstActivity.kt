@@ -11,7 +11,9 @@ class MyFirstActivity : AppCompatActivity() {
         setContentView(R.layout.activity_my_first)
         moveToBackBtn.setOnClickListener {
 
-            finish()
+            val myBack = Intent(this, MainActivity::class.java)
+
+            startActivity(myBack)
 
         }
 
