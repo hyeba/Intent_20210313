@@ -14,11 +14,13 @@
         android:text="새 닉네임 입력" />
 
     <EditText
+        android:id="@+id/nicknameEdt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="한글 입력도 가능" />
 
     <Button
+        android:id="@+id/okBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="확인"/>
