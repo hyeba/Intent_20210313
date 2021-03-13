@@ -12,7 +12,11 @@ class MainActivity : AppCompatActivity() {
 
         moveToFirstBtn.setOnClickListener {
 
+//            출발지/목적지 정보: 비행기 티켓 발권
+
             val myIntent = Intent(this, MyFirstActivity::class.java)
+
+//            티켓 들고 비행기 탑승하는 행위
             startActivity(myIntent)
 
         }
